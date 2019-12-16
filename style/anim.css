@@ -1,0 +1,33 @@
+#dex-sign {
+  display: inline-block;
+  margin: 30px 10px 15px 10px;
+  width: 255px;
+  height: 15px;
+  background: url(../assets/art.png) no-repeat;
+}
+
+#dex-sign.white {
+  background-image: url(http://drygiel.com/projects/sign/frames-255-white.png);
+}
+
+#dex-sign.play {
+  -webkit-animation: sign-anim 3.5s 0.2s steps(120) forwards;
+  animation: sign-anim 3.5s 0.2s steps(120) forwards;
+}
+
+a#dex-sign:hover {
+  -webkit-filter: 'invert(30%) brightness(80%) sepia(100%) contrast(110%) saturate(953%) hue-rotate(${sign-hover-color-spin})';
+}
+
+@-webkit-keyframes sign-anim {
+  to {
+    background-position: 0 -1800px;
+  }
+}
+
+@keyframes sign-anim {
+  to {
+    background-position: 0 -1800px;
+  }
+}
+/*# sourceMappingURL=anim.css.map */

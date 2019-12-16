@@ -1,0 +1,69 @@
+@import url("./mobile.css");
+@import url("./article.css");
+$font-family-header:'ArtFont';
+$font-family-p:'ParagraphFont';
+$bacground-color:#fff;
+$color-base:#fff;
+$color-base-p:black;
+$color-optional:#b4b4b4;
+$font-base:"AvenirNext",
+"Avenir",
+sans-serif;
+//--------------
+$color-optional-menu:#f7f7f7;
+$color-optional-menu-li:#808080;
+@media(max-width: 900px) {
+    .catalog_main_section {
+        margin-top: 20px;
+        &--sort_container {
+            display: none;
+        }
+    }
+    .latest_articles--container {
+        display: none;
+    }
+    .article_section {
+        &--element {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .article {
+        &--element {
+            padding-right: 0;
+        }
+    }
+    .popular_articles {
+        &--container {
+            &-item {
+                div {
+                    width: 100%;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 655px) {
+    header {
+        height: 60px;
+        .main_menu {
+            display: none;
+        }
+    }
+    .catalog_navigation {
+        display: none;
+    }
+    .mobile_active {
+        display: block;
+    }
+}
+
+@media(max-width: 375px) {
+    .article_section {
+        padding-top: 40px;
+        margin-top: 60px;
+    }
+}

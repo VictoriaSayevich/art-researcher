@@ -1,0 +1,65 @@
+@import url("./mobile.css");
+@import url("./contacts.css");
+$font-family-header:'ArtFont';
+$font-family-p:'ParagraphFont';
+$bacground-color:#fff;
+$color-base:#fff;
+$color-base-p:black;
+$color-optional:#b4b4b4;
+$font-base:"AvenirNext",
+"Avenir",
+sans-serif;
+//--------------
+$color-optional-input: #535353;
+$color-optional-input-placeholder: #808080;
+@media(max-width: 1000px) {
+    header {
+        height: 60px;
+        .main_menu {
+            display: none;
+        }
+    }
+    .social_networks {
+        ul {
+            li {
+                padding: 0 15px;
+                a {
+                    i {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+    #menuToggle {
+        height: 107vh;
+    }
+    .form_section {
+        height: 107vh;
+    }
+    .form_contacts {
+        width: 100%;
+    }
+    .contact_info_section {
+        text-align: left;
+        left: 10%;
+        justify-content: flex-start;
+    }
+}
+
+@media(max-width: 655px) {
+    .mobile_active {
+        display: block;
+    }
+    .mobile_main_menu {
+        margin-top: 0px;
+    }
+    .mobile_active_img {
+        display: block;
+    }
+    .desktop_active_img {
+        display: none;
+    }
+}
+
+@media(max-width: 375px) {}

@@ -1,0 +1,88 @@
+@import url("./style.css");
+@import url("./about_us.css");
+$font-family-header: 'ArtFont';
+$font-family-p: 'ParagraphFont';
+$bacground-color: #fff;
+$color-base: #fff;
+$color-base-p: black;
+$color-optional: #b4b4b4;
+$font-base: "Avenir Next",
+"Avenir",
+sans-serif;
+$color-optional-input: #535353;
+$color-optional-input-placeholder: #808080;
+.advert_section {
+    background: url(../assets/background_advert.png) no-repeat;
+    background-size: cover;
+    padding: 60px 10% 0;
+    display: grid;
+    grid-template-columns: 6fr 5fr;
+    height: 89vh;
+    &--container_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 100px 0;
+        .name_section {
+            font-size: 2rem;
+        }
+        img {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+        }
+    }
+    &--container_form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0 0 120px;
+        .name_section {
+            padding: 0 5px 20px;
+            font-size: 1.6rem;
+        }
+        .form_contacts {
+            width: 100%;
+            margin-top: 20px;
+            &--container {
+                position: relative;
+                &-item {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                        font: bold 1.2rem $font-family-p;
+                        color: $color-base-p;
+                        margin: 0 10px 1px;
+                    }
+                    input,
+                    textarea {
+                        margin: 0 0 20px;
+                        width: 100%;
+                        padding: 10px 5px;
+                        border-radius: 5px;
+                        border: 1px solid $color-optional-input;
+                        padding: 10px;
+                    }
+                    textarea {
+                        resize: none;
+                        overflow: auto;
+                    }
+                    input::placeholder,
+                    textarea::placeholder {
+                        padding: 0;
+                        margin: 0;
+                        color: $color-optional-input-placeholder;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .btn {
+                position: absolute;
+                right: 10%;
+            }
+        }
+    }
+}

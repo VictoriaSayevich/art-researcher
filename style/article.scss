@@ -1,0 +1,54 @@
+@import url("./style.css");
+$font-family-header: 'ArtFont';
+$font-family-p: 'ParagraphFont';
+$bacground-color: #fff;
+$color-base: #fff;
+$color-base-p: black;
+$color-optional: #b4b4b4;
+$font-base: "Avenir Next",
+"Avenir",
+sans-serif;
+//--------------
+$color-optional-menu: #f7f7f7;
+$color-optional-menu-li: #808080;
+.article_section {
+    display: flex;
+    grid-template-columns: auto;
+    margin-top: 125px;
+    .article--element {
+        border-bottom: none;
+    }
+}
+
+.latest_articles--container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    border-bottom: none;
+}
+
+.article_controllers {
+    width: 100%;
+    position: relative;
+    &--container {
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .btn {
+            padding: 5px 10px;
+            font-size: 1rem;
+            margin: 0 0 0 20px;
+        }
+    }
+}
+
+.popular_articles {
+    border-top: 1px solid $color-optional;
+    padding: 80px 0 0;
+    margin: 60px 10% 0;
+    &--container {
+        border-bottom: none;
+    }
+}

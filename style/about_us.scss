@@ -1,0 +1,128 @@
+@import url("./style.css");
+$font-family-header: 'ArtFont';
+$font-family-p: 'ParagraphFont';
+$bacground-color: #fff;
+$color-base: #fff;
+$color-base-p: black;
+$color-optional: #b4b4b4;
+$font-base: "Avenir Next",
+"Avenir",
+sans-serif;
+$color-optional-input: #535353;
+$color-optional-input-placeholder: #808080;
+.home_banner_area {
+    .banner_inner {
+        img {
+            &.background {
+                z-index: -5;
+            }
+        }
+        padding: 120px 10% 0;
+        &--container {
+            display: flex;
+            height: 100%;
+            align-items: flex-start;
+            &-content {
+                display: flex;
+                flex-direction: column;
+                text-align: right;
+                align-items: flex-end;
+                margin: 0 auto;
+                img {
+                    &.art_research_anim {
+                        width: 40%;
+                    }
+                }
+                h1 {
+                    font: 4rem $font-family-p;
+                    padding: 0 0 50px;
+                }
+                p {
+                    margin: 0;
+                    font: 1.6rem $font-family-p;
+                    letter-spacing: 2px;
+                    line-height: 40px;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+.team_section {
+    background: $bacground-color;
+    padding: 60px 10%;
+    &--container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        &-item {
+            margin: 0 20px 20px 0;
+            background: $color-base-p;
+            img {
+                width: 100%;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.conact_section {
+    padding: 60px 10% 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/become_part_of_team.png) no-repeat;
+    background-size: cover;
+    .name_section {
+        text-align: left;
+        color: $color-base;
+        width: 40%;
+    }
+    .form--container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .form_contacts {
+        width: 40%;
+        margin-top: 20px;
+        padding: 30px 40px 70px;
+        background: $bacground-color;
+        &--container {
+            position: relative;
+            &-item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                label {
+                    font: bold 1.2rem $font-family-p;
+                    color: $color-base-p;
+                    margin: 0 10px 1px;
+                }
+                input,
+                textarea {
+                    margin: 0 0 20px;
+                    width: 100%;
+                    padding: 10px 5px;
+                    border-radius: 5px;
+                    border: 1px solid $color-optional-input;
+                    padding: 10px;
+                }
+                textarea {
+                    resize: none;
+                    overflow: auto;
+                }
+                input::placeholder,
+                textarea::placeholder {
+                    padding: 0;
+                    margin: 0;
+                    color: $color-optional-input-placeholder;
+                    font-size: 1rem;
+                }
+            }
+        }
+        .btn {
+            position: absolute;
+            right: calc(10% + 40px);
+        }
+    }
+}

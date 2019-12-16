@@ -1,0 +1,41 @@
+@import url("./mobile.css");
+@import url("./404.css");
+@media (max-width: 900px) {
+  header {
+    height: 60px;
+  }
+  header .main_menu {
+    display: none;
+  }
+  .social_networks ul li {
+    padding: 0 15px;
+  }
+  .social_networks ul li a i {
+    font-size: 1.1rem;
+  }
+  #menuToggle {
+    height: 107vh;
+  }
+  .error_section img {
+    width: 70%;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 655px) {
+  .error_section img {
+    width: 80%;
+    padding-bottom: 50px;
+  }
+  .mobile_active {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .error_section img {
+    width: 90%;
+    padding-bottom: 50px;
+  }
+}
+/*# sourceMappingURL=mobile_404.css.map */

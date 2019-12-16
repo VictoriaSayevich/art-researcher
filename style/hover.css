@@ -1,0 +1,70 @@
+.photo_article--container {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo_article--container-item {
+  display: block;
+  max-width: 100%;
+}
+
+.photo_article:before {
+  content: "";
+}
+
+.photo_article-label {
+  width: 98%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity calc(var($transition-duration, .4s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+  transition: opacity calc(var($transition-duration, .4s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+  will-change: opacity;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.hover_effect .photo_article:before {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  -webkit-transition: opacity var(0.3s, 0.4s) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+  transition: opacity var(0.3s, 0.4s) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+  will-change: opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.hover_effect .photo_article--containeritem {
+  -webkit-transition: -webkit-transform var(0.3s, 0.4s) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+  transition: -webkit-transform var(0.3s, 0.4s) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+  transition: transform var(0.3s, 0.4s) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+  transition: transform var(0.3s, 0.4s) cubic-bezier(0.71, 0.05, 0.29, 0.9), -webkit-transform var(0.3s, 0.4s) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+  will-change: transform;
+  -webkit-transform: scale(1) translate(0, 0);
+          transform: scale(1) translate(0, 0);
+}
+
+.hover_effect:hover .photo_article--container:before {
+  opacity: 1;
+}
+
+.hover_effect:hover .photo_article--container-item {
+  -webkit-transform: scale(1.2) translate(4%, 4%);
+          transform: scale(1.2) translate(4%, 4%);
+}
+
+.hover_effect:hover .photo_article-label {
+  opacity: 1;
+  -webkit-transition-duration: var(0.3s, 0.4s);
+          transition-duration: var(0.3s, 0.4s);
+  -webkit-transition-delay: calc(var($transition-duration, .4s) / 2);
+          transition-delay: calc(var($transition-duration, .4s) / 2);
+}
+/*# sourceMappingURL=hover.css.map */

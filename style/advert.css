@@ -1,0 +1,137 @@
+@import url("./style.css");
+@import url("./about_us.css");
+.advert_section {
+  background: url(../assets/background_advert.png) no-repeat;
+  background-size: cover;
+  padding: 60px 10% 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 5fr;
+      grid-template-columns: 6fr 5fr;
+  height: 89vh;
+}
+
+.advert_section--container_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 100px 0;
+}
+
+.advert_section--container_img .name_section {
+  font-size: 2rem;
+}
+
+.advert_section--container_img img {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+}
+
+.advert_section--container_form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 0 120px;
+}
+
+.advert_section--container_form .name_section {
+  padding: 0 5px 20px;
+  font-size: 1.6rem;
+}
+
+.advert_section--container_form .form_contacts {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.advert_section--container_form .form_contacts--container {
+  position: relative;
+}
+
+.advert_section--container_form .form_contacts--container-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.advert_section--container_form .form_contacts--container-item label {
+  font: bold 1.2rem "ParagraphFont";
+  color: black;
+  margin: 0 10px 1px;
+}
+
+.advert_section--container_form .form_contacts--container-item input,
+.advert_section--container_form .form_contacts--container-item textarea {
+  margin: 0 0 20px;
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid #535353;
+  padding: 10px;
+}
+
+.advert_section--container_form .form_contacts--container-item textarea {
+  resize: none;
+  overflow: auto;
+}
+
+.advert_section--container_form .form_contacts--container-item input::-webkit-input-placeholder,
+.advert_section--container_form .form_contacts--container-item textarea::-webkit-input-placeholder {
+  padding: 0;
+  margin: 0;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.advert_section--container_form .form_contacts--container-item input:-ms-input-placeholder,
+.advert_section--container_form .form_contacts--container-item textarea:-ms-input-placeholder {
+  padding: 0;
+  margin: 0;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.advert_section--container_form .form_contacts--container-item input::-ms-input-placeholder,
+.advert_section--container_form .form_contacts--container-item textarea::-ms-input-placeholder {
+  padding: 0;
+  margin: 0;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.advert_section--container_form .form_contacts--container-item input::placeholder,
+.advert_section--container_form .form_contacts--container-item textarea::placeholder {
+  padding: 0;
+  margin: 0;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.advert_section--container_form .form_contacts .btn {
+  position: absolute;
+  right: 10%;
+}
+/*# sourceMappingURL=advert.css.map */

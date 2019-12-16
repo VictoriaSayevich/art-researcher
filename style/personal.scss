@@ -1,0 +1,92 @@
+@import url("./style.css");
+@import url("./catalog.css");
+@import url("./about_us.css");
+$font-family-header: 'ArtFont';
+$font-family-p: 'ParagraphFont';
+$bacground-color: #fff;
+$color-base: #fff;
+$color-base-p: black;
+$color-optional: #b4b4b4;
+$font-base: "Avenir Next",
+"Avenir",
+sans-serif;
+//--------------
+$color-optional-menu: #f7f7f7;
+$color-optional-menu-li: #808080;
+.home_banner_area {
+    .banner_inner {
+        img {
+            &.background {
+                z-index: -5;
+            }
+        }
+        padding: 120px 10% 0;
+        &--container {
+            align-items: flex-start;
+            &-content {
+                text-align: left;
+                align-items: flex-start;
+                h1 {
+                    font: 4rem $font-family-p;
+                    padding: 0 0 50px;
+                }
+                p {
+                    margin: 0;
+                    // font: 1.6rem $font-family-p;
+                    font: 2.2rem $font-family-header;
+                    letter-spacing: 1px;
+                    line-height: 40px;
+                    width: 60%;
+                }
+            }
+        }
+    }
+    .social_networks {
+        padding: 0;
+        ul {
+            li {
+                padding: 40px 40px 20px 0;
+                a {
+                    i {
+                        font-size: 2rem;
+                        color: $color-base;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.personal_works_section {
+    padding: 120px 10% 60px;
+    .popular_articles--container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-bottom: none;
+    }
+}
+
+.menu_works_section--container {
+    position: relative;
+}
+
+.menu_works_section {
+    .catalog_navigation {
+        position: absolute;
+        top: 0;
+    }
+    .catalog_main_section {
+        &--sort_container {
+            position: absolute;
+            top: 15px;
+        }
+    }
+}
+
+.mobile_active_img {
+    display: none;
+}
+
+.desktop_active_img {
+    display: block;
+}

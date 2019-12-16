@@ -1,0 +1,163 @@
+@import url("./style.css");
+.catalog_navigation {
+  z-index: 1;
+  position: fixed;
+  top: 60px;
+  padding: 20px 0;
+  width: 100%;
+  background: #f7f7f7;
+  border-bottom: 1px solid #b4b4b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.catalog_navigation--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.catalog_navigation--container-item {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.catalog_navigation--container-item a {
+  text-decoration: none;
+  font: bold 1rem "ParagraphFont";
+  color: #808080;
+}
+
+.catalog_navigation--container-item a:hover {
+  color: black;
+}
+
+.catalog_navigation--container-item a.active {
+  color: black;
+}
+
+.catalog_main_section {
+  margin-top: 125px;
+}
+
+.catalog_main_section--new_articles {
+  padding: 40px 10% 0;
+}
+
+.catalog_main_section--quote_container {
+  padding: 60px calc(10% + 20px) 0 10%;
+}
+
+.catalog_main_section--quote_container-item {
+  width: 100%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.catalog_main_section--quote_container-item .quote_text {
+  font: 2rem "ArtFont";
+  line-height: 30px;
+}
+
+.catalog_main_section--quote_container-item .author_name {
+  border-top: none;
+  font: 1.4rem bold "ParagraphFont";
+}
+
+.catalog_main_section--sort_container {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font: 0.8rem "ParagraphFont";
+  position: fixed;
+  top: 75px;
+  right: 2%;
+}
+
+.catalog_main_section--sort_container-list {
+  border: 1px solid black;
+  background: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 3px;
+  width: 90px;
+}
+
+.catalog_main_section--sort_container-list-submenu {
+  border-top: 1px solid #b4b4b4;
+}
+
+.catalog_main_section--sort_container-list-submenu .active_submenu {
+  padding: 5px 5px;
+  border-top: none;
+}
+
+.catalog_main_section--sort_container-list-submenu .active_submenu i {
+  padding: 0 0 0 23px;
+  font-size: 0.8rem;
+}
+
+.catalog_main_section--sort_container-list-submenu .active_submenu a {
+  font: 0.9rem "ParagraphFont";
+  text-decoration: none;
+  color: black;
+}
+
+.catalog_main_section--sort_container-list-submenu:hover {
+  cursor: pointer;
+}
+
+.catalog_main_section--sort_container-list-submenu:hover .submenu {
+  display: block;
+}
+
+.catalog_main_section--sort_container-list-submenu .submenu {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog_main_section--sort_container-list-submenu .submenu-item {
+  padding: 5px 5px;
+  border-top: 1px solid #b4b4b4;
+  list-style: none;
+}
+
+.catalog_main_section--sort_container-list-submenu .submenu-item a {
+  font: 0.9rem "ParagraphFont";
+  text-decoration: none;
+  color: black;
+}
+
+.catalog_main_section--sort_container-list-submenu .submenu-item:hover {
+  cursor: pointer;
+  background: black;
+}
+
+.catalog_main_section--sort_container-list-submenu .submenu-item:hover a {
+  color: #fff;
+}
+
+.popular_articles {
+  padding: 5px 10% 0;
+}
+
+.latest_articles {
+  padding: 5px 10% 120px;
+}
+/*# sourceMappingURL=catalog.css.map */

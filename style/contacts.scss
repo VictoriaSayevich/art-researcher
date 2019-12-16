@@ -1,0 +1,102 @@
+@import url("./style.css");
+$font-family-header: 'ArtFont';
+$font-family-p: 'ParagraphFont';
+$bacground-color: #fff;
+$color-base: #fff;
+$color-base-p: black;
+$color-optional: #b4b4b4;
+$font-base: "Avenir Next",
+"Avenir",
+sans-serif;
+//--------------
+$color-optional-input: #e2e0e0;
+$color-optional-input-placeholder: #808080;
+img {
+    &.background {
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        width: 100%;
+        z-index: -2;
+    }
+}
+
+.form_section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7));
+    background-size: cover;
+    height: 87vh;
+    width: 100%;
+    margin-top: 60px;
+    padding: 130px 10% 0;
+    .name_section {
+        color: $color-base;
+    }
+}
+
+.contact_info_section {
+    display: flex;
+    justify-content: flex-end;
+    background: none;
+    margin-top: 70px;
+    text-align: right;
+}
+
+.contact_info {
+    .info_item {
+        margin: 20px 0;
+        p {
+            font: 1.2rem $font-family-p;
+            color: $color-base;
+            margin: 2px 0;
+            a {
+                text-decoration: none;
+                color: $color-base;
+            }
+        }
+    }
+}
+
+.form_contacts {
+    width: 40%;
+    position: relative;
+    margin-top: 20px;
+    &--container {
+        &-item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            label {
+                font: bold 1.2rem $font-family-p;
+                color: $color-base;
+                letter-spacing: 2px;
+                margin: 0 10px 1px;
+            }
+            input,
+            textarea {
+                margin: 0 0 20px;
+                width: 100%;
+                padding: 10px 5px;
+                border-radius: 5px;
+                background-color: $color-optional-input;
+                border: 1px solid $color-optional;
+                padding: 10px;
+            }
+            textarea {
+                resize: none;
+                overflow: auto;
+            }
+            input::placeholder,
+            textarea::placeholder {
+                padding: 0;
+                margin: 0;
+                color: $color-optional-input-placeholder;
+                // font: normal 1rem $font-family-p;
+                font-size: 1rem;
+            }
+        }
+    }
+    .btn {
+        position: absolute;
+        right: 0;
+    }
+}

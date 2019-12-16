@@ -1,0 +1,47 @@
+@import url("./mobile.css");
+@import url("./advert.css");
+@media (max-width: 1000px) {
+  header {
+    height: 60px;
+  }
+  header .main_menu {
+    display: none;
+  }
+  .social_networks ul li {
+    padding: 0 15px;
+  }
+  .social_networks ul li a i {
+    font-size: 1.1rem;
+  }
+  #menuToggle {
+    height: 107vh;
+  }
+  .advert_section {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 150vh;
+  }
+  .advert_section--container_form {
+    padding: 0;
+  }
+}
+
+@media (max-width: 655px) {
+  .mobile_active {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .advert_section {
+    height: 87vh;
+  }
+  .advert_section--container_img {
+    display: none;
+  }
+  .advert_section--container_form .form_contacts {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+}
+/*# sourceMappingURL=mobile_advert.css.map */

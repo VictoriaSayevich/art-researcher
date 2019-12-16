@@ -1,0 +1,122 @@
+@import url("./mobile.css");
+@import url("./personal.css");
+$font-family-header:'ArtFont';
+$font-family-p:'ParagraphFont';
+$bacground-color:#fff;
+$color-base:#fff;
+$color-base-p:black;
+$color-optional:#b4b4b4;
+$font-base:"AvenirNext",
+"Avenir",
+sans-serif;
+//--------------
+$color-optional-menu:#f7f7f7;
+$color-optional-menu-li:#808080;
+@media(max-width: 900px) {
+    header {
+        height: 60px;
+        .main_menu {
+            display: none;
+        }
+    }
+    .social_networks {
+        ul {
+            li {
+                padding: 0 15px;
+                a {
+                    i {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+    #menuToggle {
+        height: 107vh;
+    }
+    .home_banner_area {
+        height: 90vh;
+        .banner_inner {
+            img {
+                &.background {
+                    height: 90vh;
+                }
+            }
+            &--container {
+                &-content {
+                    p {
+                        width: 100%;
+                        font: 1.6rem $font-family-header;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .menu_works_section--container {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    .home_banner_area {
+        .banner_inner {
+            img {
+                &.background {
+                    height: 60vh;
+                }
+            }
+        }
+        .banner_inner {
+            &--container {
+                &-content {
+                    h1 {
+                        font: 2rem $font-family-p;
+                        padding: 0 0 30px;
+                    }
+                    p {
+                        width: 100%;
+                        font: 1.8rem $font-family-header;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .menu_works_section {
+        .catalog_navigation {
+            position: absolute;
+            top: 0;
+        }
+        .catalog_main_section {
+            &--sort_container {
+                display: none;
+            }
+        }
+    }
+    .personal_works_section {
+        padding: 40px 10% 60px;
+        .popular_articles--container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            border-bottom: none;
+            &-item {
+                div {
+                    margin: 10px 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .mobile_active {
+        display: block;
+    }
+    .mobile_active_img {
+        display: block;
+    }
+    .desktop_active_img {
+        display: none;
+    }
+}
+
+@media(max-width: 375px) {}

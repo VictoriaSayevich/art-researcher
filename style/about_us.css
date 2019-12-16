@@ -1,0 +1,183 @@
+@import url("./style.css");
+.home_banner_area .banner_inner {
+  padding: 120px 10% 0;
+}
+
+.home_banner_area .banner_inner img.background {
+  z-index: -5;
+}
+
+.home_banner_area .banner_inner--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.home_banner_area .banner_inner--container-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0 auto;
+}
+
+.home_banner_area .banner_inner--container-content img.art_research_anim {
+  width: 40%;
+}
+
+.home_banner_area .banner_inner--container-content h1 {
+  font: 4rem "ParagraphFont";
+  padding: 0 0 50px;
+}
+
+.home_banner_area .banner_inner--container-content p {
+  margin: 0;
+  font: 1.6rem "ParagraphFont";
+  letter-spacing: 2px;
+  line-height: 40px;
+  width: 70%;
+}
+
+.team_section {
+  background: #fff;
+  padding: 60px 10%;
+}
+
+.team_section--container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.team_section--container-item {
+  margin: 0 20px 20px 0;
+  background: black;
+}
+
+.team_section--container-item img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.conact_section {
+  padding: 60px 10% 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../assets/become_part_of_team.png) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/become_part_of_team.png) no-repeat;
+  background-size: cover;
+}
+
+.conact_section .name_section {
+  text-align: left;
+  color: #fff;
+  width: 40%;
+}
+
+.conact_section .form--container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.conact_section .form_contacts {
+  width: 40%;
+  margin-top: 20px;
+  padding: 30px 40px 70px;
+  background: #fff;
+}
+
+.conact_section .form_contacts--container {
+  position: relative;
+}
+
+.conact_section .form_contacts--container-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.conact_section .form_contacts--container-item label {
+  font: bold 1.2rem "ParagraphFont";
+  color: black;
+  margin: 0 10px 1px;
+}
+
+.conact_section .form_contacts--container-item input,
+.conact_section .form_contacts--container-item textarea {
+  margin: 0 0 20px;
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid #535353;
+  padding: 10px;
+}
+
+.conact_section .form_contacts--container-item textarea {
+  resize: none;
+  overflow: auto;
+}
+
+.conact_section .form_contacts--container-item input::-webkit-input-placeholder,
+.conact_section .form_contacts--container-item textarea::-webkit-input-placeholder {
+  padding: 0;
+  margin: 0;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.conact_section .form_contacts--container-item input:-ms-input-placeholder,
+.conact_section .form_contacts--container-item textarea:-ms-input-placeholder {
+  padding: 0;
+  margin: 0;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.conact_section .form_contacts--container-item input::-ms-input-placeholder,
+.conact_section .form_contacts--container-item textarea::-ms-input-placeholder {
+  padding: 0;
+  margin: 0;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.conact_section .form_contacts--container-item input::placeholder,
+.conact_section .form_contacts--container-item textarea::placeholder {
+  padding: 0;
+  margin: 0;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.conact_section .form_contacts .btn {
+  position: absolute;
+  right: calc(10% + 40px);
+}
+/*# sourceMappingURL=about_us.css.map */

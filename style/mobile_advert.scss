@@ -1,0 +1,65 @@
+@import url("./mobile.css");
+@import url("./advert.css");
+$font-family-header:'ArtFont';
+$font-family-p:'ParagraphFont';
+$bacground-color:#fff;
+$color-base:#fff;
+$color-base-p:black;
+$color-optional:#b4b4b4;
+$font-base:"AvenirNext",
+"Avenir",
+sans-serif;
+//--------------
+$color-optional-input: #535353;
+$color-optional-input-placeholder: #808080;
+@media(max-width: 1000px) {
+    header {
+        height: 60px;
+        .main_menu {
+            display: none;
+        }
+    }
+    .social_networks {
+        ul {
+            li {
+                padding: 0 15px;
+                a {
+                    i {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+    #menuToggle {
+        height: 107vh;
+    }
+    .advert_section {
+        grid-template-columns: 1fr;
+        height: 150vh;
+        &--container_form {
+            padding: 0;
+        }
+    }
+}
+
+@media(max-width: 655px) {
+    .mobile_active {
+        display: block;
+    }
+}
+
+@media(max-width: 375px) {
+    .advert_section {
+        height: 87vh;
+        &--container_img {
+            display: none;
+        }
+        &--container_form {
+            .form_contacts {
+                padding: 20px;
+                background: rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+}

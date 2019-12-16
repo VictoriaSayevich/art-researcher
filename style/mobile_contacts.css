@@ -1,0 +1,48 @@
+@import url("./mobile.css");
+@import url("./contacts.css");
+@media (max-width: 1000px) {
+  header {
+    height: 60px;
+  }
+  header .main_menu {
+    display: none;
+  }
+  .social_networks ul li {
+    padding: 0 15px;
+  }
+  .social_networks ul li a i {
+    font-size: 1.1rem;
+  }
+  #menuToggle {
+    height: 107vh;
+  }
+  .form_section {
+    height: 107vh;
+  }
+  .form_contacts {
+    width: 100%;
+  }
+  .contact_info_section {
+    text-align: left;
+    left: 10%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (max-width: 655px) {
+  .mobile_active {
+    display: block;
+  }
+  .mobile_main_menu {
+    margin-top: 0px;
+  }
+  .mobile_active_img {
+    display: block;
+  }
+  .desktop_active_img {
+    display: none;
+  }
+}
+/*# sourceMappingURL=mobile_contacts.css.map */

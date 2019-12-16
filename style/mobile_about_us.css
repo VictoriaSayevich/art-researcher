@@ -1,0 +1,104 @@
+@import url("./mobile.css");
+@import url("./about_us.css");
+@media (max-width: 1000px) {
+  header {
+    height: 60px;
+  }
+  header .main_menu {
+    display: none;
+  }
+  .social_networks ul li {
+    padding: 0 15px;
+  }
+  .social_networks ul li a i {
+    font-size: 1.1rem;
+  }
+  #menuToggle {
+    height: 107vh;
+  }
+  .home_banner_area .banner_inner {
+    height: 80vh;
+  }
+  .home_banner_area .banner_inner img.background {
+    height: 80vh;
+  }
+  .home_banner_area .banner_inner--container-content img.art_research_anim {
+    width: 80%;
+  }
+  .home_banner_area .banner_inner--container-content h1 {
+    font: 4rem "ParagraphFont";
+    padding: 0 0 50px;
+  }
+  .home_banner_area .banner_inner--container-content p {
+    width: 100%;
+  }
+  .team_section--container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .conact_section {
+    padding: 60px 10% 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../assets/become_part_of_team.png) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/become_part_of_team.png) no-repeat;
+    background-size: cover;
+  }
+  .conact_section .name_section {
+    text-align: left;
+    color: #fff;
+    width: 40%;
+  }
+  .conact_section .form--container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .conact_section .form_contacts {
+    width: 100%;
+  }
+}
+
+@media (max-width: 655px) {
+  .mobile_active {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .home_banner_area {
+    display: none;
+  }
+  .team_section {
+    padding-top: 100px;
+  }
+  .team_section--container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .team_section--container-item {
+    margin: 10px 0;
+  }
+  .conact_section .name_section {
+    width: 100%;
+  }
+  .conact_section .form_contacts {
+    background: none;
+    padding: 0;
+  }
+  .conact_section .form_contacts--container-item label {
+    color: #fff;
+  }
+}
+/*# sourceMappingURL=mobile_about_us.css.map */

@@ -1,0 +1,139 @@
+@import url("./style.css");
+$font-family-header: 'ArtFont';
+$font-family-p: 'ParagraphFont';
+$bacground-color: #fff;
+$color-base: #fff;
+$color-base-p: black;
+$color-optional: #b4b4b4;
+$font-base: "Avenir Next",
+"Avenir",
+sans-serif;
+//--------------
+$color-optional-menu: #f7f7f7;
+$color-optional-menu-li: #808080;
+.catalog_navigation {
+    z-index: 1;
+    position: fixed;
+    top: 60px;
+    padding: 20px 0;
+    width: 100%;
+    background: $color-optional-menu;
+    border-bottom: 1px solid $color-optional;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    &--container {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        &-item {
+            list-style: none;
+            padding: 0 20px;
+            a {
+                text-decoration: none;
+                font: bold 1rem $font-family-p;
+                color: $color-optional-menu-li;
+                &:hover {
+                    color: $color-base-p;
+                }
+                &.active {
+                    color: $color-base-p;
+                }
+            }
+        }
+    }
+}
+
+.catalog_main_section {
+    margin-top: 125px;
+    &--new_articles {
+        padding: 40px 10% 0;
+    }
+    &--quote_container {
+        padding: 60px calc(10% + 20px) 0 10%;
+        &-item {
+            width: 100%;
+            margin: 0 auto;
+            text-align: right;
+            .quote_text {
+                font: 2rem $font-family-header;
+                line-height: 30px;
+            }
+            .author_name {
+                border-top: none;
+                font: 1.4rem bold $font-family-p;
+            }
+        }
+    }
+    &--sort_container {
+        z-index: 2;
+        display: flex;
+        justify-content: flex-end;
+        font: 0.8rem $font-family-p;
+        position: fixed;
+        top: 75px;
+        right: 2%;
+        &-list {
+            border: 1px solid $color-base-p;
+            background: $bacground-color;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-radius: 3px;
+            width: 90px;
+        }
+        &-list-submenu {
+            border-top: 1px solid $color-optional;
+            .active_submenu {
+                padding: 5px 5px;
+                border-top: none;
+                i {
+                    padding: 0 0 0 23px;
+                    font-size: 0.8rem;
+                }
+                a {
+                    font: 0.9rem $font-family-p;
+                    text-decoration: none;
+                    color: $color-base-p;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+                .submenu {
+                    display: block;
+                }
+            }
+            .submenu {
+                display: none;
+                padding: 0;
+                margin: 0;
+                &-item {
+                    padding: 5px 5px;
+                    border-top: 1px solid $color-optional;
+                    list-style: none;
+                    a {
+                        font: 0.9rem $font-family-p;
+                        text-decoration: none;
+                        color: $color-base-p;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: $color-base-p;
+                        a {
+                            color: $color-base;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.popular_articles {
+    padding: 5px 10% 0;
+}
+
+.latest_articles {
+    padding: 5px 10% 120px;
+}

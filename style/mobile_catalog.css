@@ -1,0 +1,67 @@
+@import url("./mobile.css");
+@import url("./catalog.css");
+@media (max-width: 900px) {
+  .catalog_main_section {
+    margin-top: 125px;
+  }
+  .catalog_main_section--new_articles {
+    padding: 40px;
+  }
+  .catalog_main_section--sort_container {
+    display: none;
+  }
+  .popular_articles--container-item div {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .latest_articles {
+    padding: 5px 10% 20px;
+  }
+  .latest_articles--container {
+    padding: 5px 0 40px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .latest_articles--container-item div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 655px) {
+  header {
+    height: 60px;
+  }
+  header .main_menu {
+    display: none;
+  }
+  .catalog_navigation {
+    display: none;
+  }
+  .catalog_main_section {
+    margin-top: 60px;
+    padding: 10px 40px 40px;
+  }
+  .catalog_main_section--new_articles {
+    padding: 0px;
+  }
+  .mobile_active {
+    display: block;
+  }
+  .mobile_main_menu {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .catalog_main_section {
+    padding: 80px 40px 40px;
+  }
+  .catalog_main_section--new_articles {
+    padding: 0px;
+  }
+  .catalog_main_section--quote_container {
+    display: none;
+  }
+}
+/*# sourceMappingURL=mobile_catalog.css.map */

@@ -1,0 +1,40 @@
+@import url("./style.css");
+$font-family-header: 'ArtFont';
+$font-family-p: 'ParagraphFont';
+$bacground-color: #fff;
+$color-base: #fff;
+$color-base-p: black;
+$color-optional: #b4b4b4;
+$font-base: "Avenir Next",
+"Avenir",
+sans-serif;
+//--------------
+$color-optional-menu: #f7f7f7;
+$color-optional-menu-li: #808080;
+.error_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.2)), url(../assets/error_background.png) no-repeat;
+    background-size: cover;
+    img {
+        width: 20%;
+        padding-bottom: 50px;
+    }
+}
+
+.btn {
+    a {
+        text-decoration: none;
+        color: $color-base-p;
+        &:hover {
+            text-decoration: none;
+            color: $color-base;
+        }
+    }
+}

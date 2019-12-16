@@ -1,0 +1,127 @@
+@import url("./style.css");
+img.background {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.form_section {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(rgba(0, 0, 0, 0.7));
+  background-size: cover;
+  height: 87vh;
+  width: 100%;
+  margin-top: 60px;
+  padding: 130px 10% 0;
+}
+
+.form_section .name_section {
+  color: #fff;
+}
+
+.contact_info_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: none;
+  margin-top: 70px;
+  text-align: right;
+}
+
+.contact_info .info_item {
+  margin: 20px 0;
+}
+
+.contact_info .info_item p {
+  font: 1.2rem "ParagraphFont";
+  color: #fff;
+  margin: 2px 0;
+}
+
+.contact_info .info_item p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.form_contacts {
+  width: 40%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.form_contacts--container-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form_contacts--container-item label {
+  font: bold 1.2rem "ParagraphFont";
+  color: #fff;
+  letter-spacing: 2px;
+  margin: 0 10px 1px;
+}
+
+.form_contacts--container-item input,
+.form_contacts--container-item textarea {
+  margin: 0 0 20px;
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 5px;
+  background-color: #e2e0e0;
+  border: 1px solid #b4b4b4;
+  padding: 10px;
+}
+
+.form_contacts--container-item textarea {
+  resize: none;
+  overflow: auto;
+}
+
+.form_contacts--container-item input::-webkit-input-placeholder,
+.form_contacts--container-item textarea::-webkit-input-placeholder {
+  padding: 0;
+  margin: 0;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.form_contacts--container-item input:-ms-input-placeholder,
+.form_contacts--container-item textarea:-ms-input-placeholder {
+  padding: 0;
+  margin: 0;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.form_contacts--container-item input::-ms-input-placeholder,
+.form_contacts--container-item textarea::-ms-input-placeholder {
+  padding: 0;
+  margin: 0;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.form_contacts--container-item input::placeholder,
+.form_contacts--container-item textarea::placeholder {
+  padding: 0;
+  margin: 0;
+  color: #808080;
+  font-size: 1rem;
+}
+
+.form_contacts .btn {
+  position: absolute;
+  right: 0;
+}
+/*# sourceMappingURL=contacts.css.map */
