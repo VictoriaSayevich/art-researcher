@@ -11,8 +11,25 @@
     font-weight: lighter;
 }
 
+$font-family-logo: 'Poiret One',
+cursive;
+//main screen category font families
+$font-family-painting: 'Rock Salt',
+cursive;
+$font-family-architecture: 'Orbitron',
+sans-serif;
+$font-family-theatre: 'Syncopate',
+sans-serif;
+$font-family-music: 'Cinzel',
+serif;
+$font-family-cinema: 'Questrial',
+sans-serif;
+$font-family-literature: 'Cutive Mono',
+monospace;
+//------------------------------------
 $font-family-header: 'ArtFont';
 $font-family-p: 'ParagraphFont';
+$bacground-color-optinal: #151112;
 $bacground-color: #fff;
 $color-base: #fff;
 $color-base-p: black;
@@ -32,12 +49,36 @@ sans-serif;
     }
 }
 
+%hover-link-shared {
+    position: relative;
+    &:before {
+        content: "";
+        width: 0;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        background: $bacground-color;
+        transition: all 0.3s;
+    }
+    &:hover {
+        opacity: 1;
+        transition: all 1.5s;
+        &:before {
+            width: 100%;
+            left: 0;
+            background: $bacground-color
+        }
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
     background: $bacground-color;
     color: $color-base-p;
     font-family: $font-base;
+    font-size: 16px;
     p {
         font-family: $font-family-p;
     }
@@ -62,7 +103,7 @@ section {
     }
 }
 
-.social_networks {
+.social-networks {
     margin: auto 0;
     padding: 0 23px;
     ul {
@@ -120,27 +161,65 @@ header {
     background: $color-base;
     border-bottom: 1px solid $color-optional;
     top: 0;
-    .header--element {
+    &.scroll {
+        transition: all 0.6s;
+        .main-menu__element__page {
+            @extend %hover-link-shared;
+            &:before {
+                background: $bacground-color-optinal;
+            }
+            &:hover {
+                &:before {
+                    background: $color-base-p;
+                }
+            }
+        }
+    }
+    &.not-scroll {
+        transition: all 0.6s;
+        background: none;
+        border-bottom: none;
+        .main-menu {
+            border-right: none;
+            a {
+                color: $bacground-color;
+            }
+        }
+        .social-networks {
+            i {
+                opacity: 0.7;
+                color: $bacground-color;
+            }
+        }
+        #menuToggle {
+            span {
+                background-color: $bacground-color;
+            }
+        }
+    }
+    .header__element {
         display: flex;
         justify-content: center;
     }
     .logo {
         width: 50px;
     }
-    .main_menu {
+    .main-menu {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         padding: 0 30px;
         border-right: 1px solid $color-optional;
-        &--element {
+        &__element {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin: 0;
-            &-page {
+            &__page {
                 list-style: none;
-                padding: 0 20px;
+                padding: 0 3px;
+                margin: 0 17px;
+                @extend %hover-link-shared;
                 a {
                     font: 1.2rem $font-family-p;
                     text-decoration: none;
@@ -235,8 +314,8 @@ footer {
     span {
         display: block;
         width: 33px;
-        height: 4px;
-        margin-bottom: 5px;
+        height: 2px;
+        margin-bottom: 8px;
         position: relative;
         background: $color-base-p;
         border-radius: 1px;
@@ -271,51 +350,154 @@ footer {
     }
 }
 
-.home_banner_area {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(54, 54, 54, 0.7), rgba(0, 0, 0, 0.8));
-    background-size: cover;
-    color: $color-base;
-    height: 100vh;
-    width: 100%;
-    top: 50px;
+.main-screen {
+    position: fixed;
+    top: 0;
     left: 0;
-    padding: 0;
-    img {
-        &.background {
-            position: fixed;
-            height: 100vh;
-            top: 0;
-            width: 100%;
-            z-index: -2;
+    width: 100%;
+    background-color: $bacground-color-optinal;
+    z-index: -1;
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        &__hero-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50%;
         }
-    }
-    .banner_inner {
-        height: 100%;
-        &--container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            &-content {
-                text-align: center;
-                img {
-                    &.art_research_anim {
-                        width: 70%;
+        ul {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+        }
+        &__category {
+            list-style: none;
+            &:nth-child(2n) {
+                margin-bottom: 30px;
+            }
+            a {
+                color: $color-base;
+                text-decoration: none;
+                opacity: 0.2;
+                @extend %hover-link-shared;
+                &:before {
+                    transition: all 1s;
+                }
+                &#painting {
+                    font: 4.2rem $font-family-painting;
+                    &:before {
+                        bottom: 20px;
                     }
                 }
-                h1 {
-                    font: 4rem $font-family-p;
-                    padding: 0 0 50px;
+                &#architecture {
+                    margin-left: 150px;
+                    font: 3.6rem $font-family-architecture;
                 }
-                p {
-                    margin: 0 auto;
-                    font: 1.8rem $font-family-p;
-                    letter-spacing: 2px;
-                    line-height: 40px;
-                    width: 60%;
+                &#theatre {
+                    margin-left: 80px;
+                    font: 3.8rem $font-family-theatre;
+                }
+                &#music {
+                    margin-left: 0;
+                    font: 6.2rem $font-family-music;
+                    &:before {
+                        bottom: 20px;
+                    }
+                }
+                &#cinema {
+                    margin-left: 80px;
+                    font: 5.1rem $font-family-cinema;
+                }
+                &#literature {
+                    margin-left: 60px;
+                    font: 4.3rem $font-family-literature;
                 }
             }
         }
+    }
+}
+
+.second-screen {
+    margin: 100vh 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 10% 0;
+}
+
+.main-article {
+    width: 60%;
+}
+
+.article {
+    &__photo {
+        width: 100%;
+        margin: 0 0 20px 0;
+        padding: 0 0 20px 0;
+        border-bottom: 1px solid $color-optional;
+    }
+    &__author,
+    &__name {
+        font: 1.4rem $font-family-p;
+        margin: 5px 0;
+        padding: 0;
+    }
+    &__date {
+        margin: 0 0 20px;
+        font-size: 0.8rem;
+    }
+    &__text {
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 20px 0 0 0;
+    }
+}
+
+.catalog {
+    width: 40%;
+    margin: 0 0 0 20px;
+    aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 0 0 20px 0;
+        border-bottom: 1px solid $color-optional;
+    }
+    &__element {
+        position: relative;
+        margin: 0 20px 20px 0;
+        background-color: $color-base-p;
+        a {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        &__name {
+            font: bold 1.2rem $font-family-p;
+            color: $bacground-color;
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+        }
+        &__photo {
+            width: 100%;
+            opacity: 0.3;
+        }
+        &:hover {
+            transition: all 0.3s;
+            opacity: 0.8;
+        }
+    }
+}
+
+.container {
+    &__name {
+        font: bold 1.4rem $font-family-p;
+        color: $color-base-p;
     }
 }
 
@@ -393,7 +575,6 @@ footer {
 
 .carousel {
     width: 100%;
-    border-bottom: 1px solid $color-optional;
     footer {
         font: bold 1rem $font-family-p;
         padding: 20px 0 0 0;
