@@ -19,7 +19,7 @@ let showScrollHeader = function(header) {
     changeClass(header, 'scroll', 'not-scroll');
 }
 
-let hideScrollHeader = function(header, logoHide, logoShow) {
+let hideScrollHeader = function(header) {
     // header.classList.remove('show-anim');
     changeClass(header, 'not-scroll', 'scroll');
 }
